@@ -16,10 +16,19 @@ body {
 }
 
 .container {
+  position: relative;
   width: 600px;
   display: flex;
   flex-direction: column;
   gap: var(--unit);
+}
+.container::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  opacity: 0.5;
+  background: red;
 }
 .container:hover {
   border: 2px solid white;
