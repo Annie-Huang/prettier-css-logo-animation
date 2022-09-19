@@ -7,3 +7,58 @@
   --gray: #465862;
   --unit: 10px;
 }
+
+body {
+  background: var(--background);
+  margin: 0;
+  padding-top: 50px;
+  padding-left: 50px;
+}
+
+.container {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--unit);
+}
+
+.row {
+  height: var(--unit);
+  display: flex;
+  gap: var(--unit);
+}
+
+.cell {
+  height: 100%;
+  width: calc(var(--size, 2) * var(--unit));
+  background-color: var(--gray);
+  border-radius: 1000px;
+}
+
+.cell.size-2 {
+  --size: 2;
+}
+.cell.size-3 {
+  --size: 3;
+}
+.cell.size-4 {
+  --size: 4;
+}
+.cell.size-5 {
+  --size: 5;
+}
+.cell.size-6 {
+  --size: 6;
+}
+.cell.size-7 {
+  --size: 7;
+}
+.cell.size-8 {
+  --size: 8;
+}
+.cell.size-9 {
+  --size: 9;
+}
+.cell.size-10 {
+  --size: 10;
+}
