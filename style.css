@@ -16,15 +16,19 @@ body {
 }
 
 .container {
-  width: 500px;
+  width: 600px;
   display: flex;
   flex-direction: column;
   gap: var(--unit);
+}
+.container:hover {
+  border: 2px solid white;
 }
 
 .row {
   height: var(--unit);
   display: flex;
+  justify-content: center;
   gap: var(--unit);
 }
 
