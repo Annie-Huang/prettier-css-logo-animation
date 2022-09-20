@@ -108,6 +108,30 @@ body {
   --delay: 3;
   --offset: 200px;
 }
+.row:nth-child(4) {
+  --delay: 4;
+  --offset: -100px;
+}
+.row:nth-child(5) {
+  --delay: 5;
+  --offset: 200px;
+}
+.row:nth-child(6) {
+  --delay: 6;
+  --offset: -50px;
+}
+.row:nth-child(7) {
+  --delay: 7;
+  --offset: 150px;
+}
+.row:nth-child(8) {
+  --delay: 8;
+  --offset: -100px;
+}
+.row:nth-child(9) {
+  --delay: 9;
+  --offset: 50px;
+}
 
 @keyframes load-row {
   100% {
