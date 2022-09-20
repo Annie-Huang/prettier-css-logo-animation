@@ -40,6 +40,9 @@ body {
   display: flex;
   justify-content: center;
   gap: var(--unit);
+
+  translate: var(--offset);
+  animation: load-row 1s calc(var(--delay) * 100ms + 500ms) forwards; /* duration, delay */
 }
 
 .cell {
@@ -95,20 +98,15 @@ body {
 
 .row:nth-child(1) {
   --delay: 1;
+  --offset: 150px;
 }
 .row:nth-child(2) {
   --delay: 2;
+  --offset: -100px;
 }
 .row:nth-child(3) {
   --delay: 3;
-}
-
-.row {
-  translate: -50px;
-  animation: load-row 1s calc(var(--delay) * 100ms + 500ms) forwards; /* duration, delay */
-}
-.row:nth-child(2n) {
-  translate: 50px;
+  --offset: 200px;
 }
 
 @keyframes load-row {
