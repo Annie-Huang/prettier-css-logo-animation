@@ -21,6 +21,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: var(--unit);
+  overflow: hidden;
 }
 .container:hover::before {
   content: "";
@@ -90,4 +91,11 @@ body {
 }
 .cell.purple {
   background-color: var(--purple);
+}
+
+.row {
+  translate: -50px;
+}
+.row:nth-child(2n) {
+  translate: 50px;
 }
