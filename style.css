@@ -93,9 +93,19 @@ body {
   background-color: var(--purple);
 }
 
+.row:nth-child(1) {
+  --delay: 1;
+}
+.row:nth-child(2) {
+  --delay: 2;
+}
+.row:nth-child(3) {
+  --delay: 3;
+}
+
 .row {
   translate: -50px;
-  animation: load-row 1s 500ms forwards; /* duration, delay */
+  animation: load-row 1s calc(var(--delay) * 100ms + 500ms) forwards; /* duration, delay */
 }
 .row:nth-child(2n) {
   translate: 50px;
