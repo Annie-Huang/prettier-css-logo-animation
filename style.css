@@ -95,7 +95,14 @@ body {
 
 .row {
   translate: -50px;
+  animation: load-row 1s 500ms forwards; /* duration, delay */
 }
 .row:nth-child(2n) {
   translate: 50px;
+}
+
+@keyframes load-row {
+  100% {
+    translate: 0;
+  }
 }
