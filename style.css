@@ -168,7 +168,7 @@ body {
   }
 }
 
-.container:hover .row {
+.container.slide .row {
   animation: slide 500ms calc((var(--delay) - 1) * 100ms) both;
 }
 .row:nth-child(2n) {
