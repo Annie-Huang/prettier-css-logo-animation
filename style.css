@@ -24,14 +24,14 @@ body {
   gap: var(--unit);
   overflow: hidden;
 }
-.container:hover::before {
+/*.container:hover::before {
   content: "";
   position: absolute;
   width: 50%;
   height: 100%;
   opacity: 0.5;
   background: red;
-}
+}*/
 .container:hover {
   border: 2px solid white;
 }
@@ -169,13 +169,16 @@ body {
 }
 
 .container:hover .row {
-  animation: slide 500ms calc((var(--delay) - 1) * 100ms) forwards;
+  animation: slide 500ms calc((var(--delay) - 1) * 100ms) both;
 }
 .row:nth-child(2n) {
   --direction: -1;
 }
 
 @keyframes slide {
+  0% {
+    translate: 0;
+  }
   100% {
     translate: calc(var(--container-width) * var(--direction, 1));
   }
