@@ -6,6 +6,7 @@
   --background: #1a2b34;
   --gray: #465862;
   --unit: 10px;
+  --container-width: 650px;
 }
 
 body {
@@ -17,7 +18,7 @@ body {
 
 .container {
   position: relative;
-  width: 650px;
+  width: var(--container-width);
   display: flex;
   flex-direction: column;
   gap: var(--unit);
@@ -164,5 +165,18 @@ body {
 @keyframes load-row {
   100% {
     translate: 0;
+  }
+}
+
+.container:hover .row {
+  animation: slide 500ms calc((var(--delay) - 1) * 100ms) forwards;
+}
+.row:nth-child(2n) {
+  --direction: -1;
+}
+
+@keyframes slide {
+  100% {
+    translate: calc(var(--container-width) * var(--direction, 1));
   }
 }
