@@ -144,6 +144,22 @@ body {
   --delay: 9;
   --offset: 50px;
 }
+.row:nth-child(10) {
+  --delay: 10;
+  --offset: -150px;
+}
+.row:nth-child(11) {
+  --delay: 11;
+  --offset: 150px;
+}
+.row:nth-child(12) {
+  --delay: 12;
+  --offset: 250px;
+}
+.row:nth-child(13) {
+  --delay: 13;
+  --offset: -2550px;
+}
 
 @keyframes load-row {
   100% {
