@@ -4,11 +4,11 @@ cloneContainer.classList.add("duplicate");
 container.append(cloneContainer);
 
 container.addEventListener("click", () => {
-  container.classList.add("slide");
+  container.classList.add("slide", "no-load");
   const rows = container.querySelectorAll(".row");
 
   const lastRow = rows[rows.length - 1];
   lastRow.addEventListener("animationend", () => {
-    console.log("Here");
+    container.classList.remove("slide");
   });
 });
