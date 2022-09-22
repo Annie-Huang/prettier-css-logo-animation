@@ -5,3 +5,5 @@ https://github.com/Annie-Huang/prettier-css-logo-animation
 
 https://prettier.io/
 ------------------------------------------------------------------------
+
+Need to click the container when the initial loading finishes to see the second animation.
