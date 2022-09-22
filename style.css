@@ -32,16 +32,18 @@ body {
   opacity: 0.5;
   background: red;
 }*/
-.container:hover {
-  border: 2px solid white;
-}
+/*.container:hover {*/
+/*  border: 2px solid white;*/
+/*}*/
 
 .row {
   height: var(--unit);
   display: flex;
   justify-content: center;
   gap: var(--unit);
+}
 
+:not(.duplicate) > .row {
   translate: var(--offset);
   animation: load-row 1s calc(var(--delay) * 100ms + 500ms) forwards; /* duration, delay */
 }
@@ -168,7 +170,7 @@ body {
   }
 }
 
-.container.slide .row {
+.container.slide:not(.duplicate) > .row {
   animation: slide 500ms calc((var(--delay) - 1) * 100ms) both;
 }
 .row:nth-child(2n) {
