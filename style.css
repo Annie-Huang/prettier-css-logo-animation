@@ -166,7 +166,7 @@ body {
 }
 .row:nth-child(13) {
   --delay: 13;
-  --offset: -2550px;
+  --offset: -250px;
 }
 
 @keyframes load-row {
